@@ -15,7 +15,7 @@ class ResponseGenerator {
   ///
   /// Define [isPlural] to show the proper type of message.
   FeedbackResponse<E> createSuccessResponse<E>({
-    required isPlural,
+    required bool isPlural,
     required E result,
   }) =>
       FeedbackResponse.success(
@@ -30,7 +30,7 @@ class ResponseGenerator {
   ///
   /// Define [isPlural] to show the proper type of message.
   FeedbackResponse<E> createFailedResponse<E>({
-    required isPlural,
+    required bool isPlural,
   }) =>
       FeedbackResponse.error(
         title: _feedbackConfig.createFailedTitle,
@@ -43,7 +43,7 @@ class ResponseGenerator {
   ///
   /// Define [isPlural] to show the proper type of message.
   FeedbackResponse<E> searchSuccessResponse<E>({
-    required isPlural,
+    required bool isPlural,
     required E result,
   }) =>
       FeedbackResponse.success(
@@ -58,7 +58,7 @@ class ResponseGenerator {
   ///
   /// Define [isPlural] to show the proper type of message.
   FeedbackResponse<E> searchFailedResponse<E>({
-    required isPlural,
+    required bool isPlural,
   }) =>
       FeedbackResponse.error(
         title: _feedbackConfig.searchFailedTitle,
@@ -71,7 +71,7 @@ class ResponseGenerator {
   ///
   /// Define [isPlural] to show the proper type of message.
   FeedbackResponse<E> updateSuccessResponse<E>({
-    required isPlural,
+    required bool isPlural,
     required E result,
   }) =>
       FeedbackResponse.success(
@@ -86,7 +86,7 @@ class ResponseGenerator {
   ///
   /// Define [isPlural] to show the proper type of message.
   FeedbackResponse<E> updateFailedResponse<E>({
-    required isPlural,
+    required bool isPlural,
   }) =>
       FeedbackResponse.error(
         title: _feedbackConfig.updateFailedTitle,
@@ -99,7 +99,7 @@ class ResponseGenerator {
   ///
   /// Define [isPlural] to show the proper type of message.
   FeedbackResponse<void> deleteSuccessResponse({
-    required isPlural,
+    required bool isPlural,
   }) =>
       FeedbackResponse.success(
         title: _feedbackConfig.deleteSuccessTitle,
@@ -112,7 +112,7 @@ class ResponseGenerator {
   ///
   /// Define [isPlural] to show the proper type of message.
   FeedbackResponse<E> deleteFailedResponse<E>({
-    required isPlural,
+    required bool isPlural,
   }) =>
       FeedbackResponse.error(
         title: _feedbackConfig.deleteFailedTitle,

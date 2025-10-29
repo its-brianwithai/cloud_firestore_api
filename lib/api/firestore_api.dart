@@ -157,7 +157,7 @@ class FirestoreApi<T extends Object> {
 
   /// Finds a document based on given [id].
   ///
-  /// This method returns raw data in the form of a Map<String, dynamic>. If [_tryAddLocalId] is
+  /// This method returns raw data in the form of a `Map<String, dynamic>`. If [_tryAddLocalId] is
   /// true then the map will also contain a local id field based on the [_idFieldName]
   /// specified in the constructor so you may retrieve document id's more easily after serialization.
   ///
@@ -234,7 +234,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a Map<String, dynamic> consider using
+  /// If you rather want to retrieve data in the raw form of a `Map<String, dynamic>` consider using
   /// the [findById] method instead.
   Future<FeedbackResponse<T>> findByIdWithConverter({
     required String id,
@@ -297,7 +297,7 @@ class FirestoreApi<T extends Object> {
   /// able to search a [SearchTermType.startsWith] field for direct hits or for a [SearchTermType.arrayContains]
   /// that may contain the [searchField].
   ///
-  /// This method returns raw data in the form of a List<Map<String, dynamic>>. If [_tryAddLocalId] is
+  /// This method returns raw data in the form of a `List<Map<String, dynamic>>`. If [_tryAddLocalId] is
   /// true then the map will also contain a local id field based on the [_idFieldName]
   /// specified in the constructor so you may retrieve document id's more easily after serialization.
   ///
@@ -454,7 +454,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a List<Map<String, dynamic>> consider
+  /// If you rather want to retrieve data in the raw form of a `List<Map<String, dynamic>>` consider
   /// using the [findBySearchTerm] method instead.
   Future<FeedbackResponse<List<T>>> findBySearchTermWithConverter({
     required String searchTerm,
@@ -585,7 +585,7 @@ class FirestoreApi<T extends Object> {
   /// Use the [whereDescription] to describe what your [collectionReferenceQuery] is looking for so that it
   /// shows proper logging in your console.
   ///
-  /// This method returns raw data in the form of a List<Map<String, dynamic>>. If [_tryAddLocalId] is
+  /// This method returns raw data in the form of a `List<Map<String, dynamic>>`. If [_tryAddLocalId] is
   /// true then the map will also contain a local id field based on the [_idFieldName]
   /// specified in the constructor so you may retrieve document id's more easily after serialization.
   ///
@@ -654,7 +654,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a List<Map<String, dynamic>> consider
+  /// If you rather want to retrieve data in the raw form of a `List<Map<String, dynamic>>` consider
   /// using the [findByQuery] method instead.
   Future<FeedbackResponse<List<T>>> findByQueryWithConverter({
     required CollectionReferenceQuery<T> collectionReferenceQuery,
@@ -697,7 +697,7 @@ class FirestoreApi<T extends Object> {
 
   /// Finds all documents of the specified [_collectionPath].
   ///
-  /// This method returns raw data in the form of a List<Map<String, dynamic>>. If [_tryAddLocalId] is
+  /// This method returns raw data in the form of a `List<Map<String, dynamic>>`. If [_tryAddLocalId] is
   /// true then the map will also contain a local id field based on the [_idFieldName]
   /// specified in the constructor so you may retrieve document id's more easily after serialization.
   ///
@@ -751,7 +751,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a List<Map<String, dynamic>> consider
+  /// If you rather want to retrieve data in the raw form of a `List<Map<String, dynamic>>` consider
   /// using the [findAll] method instead.
   Future<FeedbackResponse<List<T>>> findAllWithConverter() async {
     try {
@@ -1559,7 +1559,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a List<Map<String, dynamic>> consider
+  /// If you rather want to retrieve data in the raw form of a `List<Map<String, dynamic>>` consider
   /// using the [findCollection] method instead.
   Query<T> findCollectionWithConverter() {
     _log.info(
@@ -1683,7 +1683,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a Map<String, dynamic> consider
+  /// If you rather want to retrieve data in the raw form of a `Map<String, dynamic>` consider
   /// using the [findDocRef] method instead.
   DocumentReference<T> findDocRefWithConverter({
     required String id,
@@ -1816,7 +1816,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a Map<String, dynamic> consider
+  /// If you rather want to retrieve data in the raw form of a `Map<String, dynamic>` consider
   /// using the [findDocSnapshot] method instead.
   Future<DocumentSnapshot<T>> findDocSnapshotWithConverter({
     required String id,
@@ -1857,7 +1857,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a List<Map<String, dynamic>> consider
+  /// If you rather want to retrieve data in the raw form of a `List<Map<String, dynamic>>` consider
   /// using the [findStream] method instead.
   Stream<List<T>> findStreamWithConverter() {
     _log.info(
@@ -1886,7 +1886,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a List<Map<String, dynamic>> consider
+  /// If you rather want to retrieve data in the raw form of a `List<Map<String, dynamic>>` consider
   /// using the [findStreamByQuery] method instead.
   Stream<List<T>> findStreamByQueryWithConverter({
     CollectionReferenceQuery<T>? collectionReferenceQuery,
@@ -1921,7 +1921,7 @@ class FirestoreApi<T extends Object> {
   /// on the [_documentReferenceFieldName] specified in the constructor. Add this reference field to your [T] and you will
   /// have easy access to the document reference at any time.
   ///
-  /// If you rather want to retrieve data in the raw form of a Map<String, dynamic> consider
+  /// If you rather want to retrieve data in the raw form of a `Map<String, dynamic>` consider
   /// using the [findDocStream] method instead.
   Stream<T?> findDocStreamWithConverter({
     required String id,
@@ -1949,7 +1949,7 @@ class FirestoreApi<T extends Object> {
     return docRefWithConverter.snapshots().map((e) => e.data());
   }
 
-  /// Finds a [CollectionReference] of type Map<String, dynamic> based on specified [_collectionPath].
+  /// Finds a [CollectionReference] of type `Map<String, dynamic>` based on specified [_collectionPath].
   ///
   /// If [_tryAddLocalId] is true then your data will also contain a local id field based
   /// on the [_idFieldName] specified in the constructor.
@@ -2024,7 +2024,7 @@ class FirestoreApi<T extends Object> {
     );
   }
 
-  /// Finds a [DocumentReference] of type Map<String, dynamic> based on given [id].
+  /// Finds a [DocumentReference] of type `Map<String, dynamic>` based on given [id].
   ///
   /// If [_tryAddLocalId] is true then your data will also contain a local id field based
   /// on the [_idFieldName] specified in the constructor. Add this id field to your [T] and you will
@@ -2116,7 +2116,7 @@ class FirestoreApi<T extends Object> {
     );
   }
 
-  /// Finds a [DocumentSnapshot] of type Map<String, dynamic> based on given [id].
+  /// Finds a [DocumentSnapshot] of type `Map<String, dynamic>` based on given [id].
   ///
   /// Make sure to have specified the [_toJson] and [_fromJson] methods or else the [FirestoreApi]
   /// will not now how to convert the data to [T].
@@ -2155,7 +2155,7 @@ class FirestoreApi<T extends Object> {
     return docRef.get(_getOptions);
   }
 
-  /// Finds a [Stream] of List<Map<String, dynamic>> based on specified [_collectionPath] (all documents).
+  /// Finds a [Stream] of `List<Map<String, dynamic>>` based on specified [_collectionPath] (all documents).
   ///
   /// If [_tryAddLocalId] is true then your data will also contain a local id field based
   /// on the [_idFieldName] specified in the constructor. Add this id field to your [T] and you will
@@ -2179,7 +2179,7 @@ class FirestoreApi<T extends Object> {
     return findCollection().snapshots();
   }
 
-  /// Finds a [Stream] of List<Map<String, dynamic>> based on given [collectionReferenceQuery] and [whereDescription].
+  /// Finds a [Stream] of `List<Map<String, dynamic>>` based on given [collectionReferenceQuery] and [whereDescription].
   ///
   /// If [_tryAddLocalId] is true then your data will also contain a local id field based
   /// on the [_idFieldName] specified in the constructor. Add this id field to your [T] and you will
@@ -2210,7 +2210,7 @@ class FirestoreApi<T extends Object> {
         );
   }
 
-  /// Finds a [Stream] of type Map<String, dynamic> based on given [id].
+  /// Finds a [Stream] of type `Map<String, dynamic>` based on given [id].
   ///
   /// If [_tryAddLocalId] is true then your data will also contain a local id field based
   /// on the [_idFieldName] specified in the constructor. Add this id field to your [T] and you will

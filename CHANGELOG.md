@@ -1,3 +1,11 @@
+## 0.1.0
+
+* Updated cloud_firestore dependency to ^6.0.3
+* Updated flutter_lints to ^6.0.0
+* Updated example dependencies (veto, cupertino_icons, firebase_core, flutter_lints)
+* Fixed linter warnings (super parameters, unnecessary overrides, type annotations)
+* Updated SDK constraints for example project
+
 ## 0.0.11+6
 
 * Updated cloud_firestore dependency to ^5.6.0
